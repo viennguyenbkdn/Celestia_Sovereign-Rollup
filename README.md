@@ -8,7 +8,7 @@
   * a Celestia DA Fullnode on server C
 - For installation guide of DA Full/Light node, kindly refer below link 
   * [Celestia's official guide](https://docs.celestia.org/nodes/celestia-node/)
-  * My owned script
+  * My owned script for [Fullnode](https://github.com/viennguyenbkdn/Cosmos/blob/main/Celestia/Fullnode_Setup.md) or [Lightnode](https://github.com/viennguyenbkdn/Cosmos/blob/main/Celestia/Lightnode_setup.md)
 
 ## B. Installation of Rollup chain
 ### 1. Install dependencies, if needed
