@@ -1,4 +1,4 @@
-# Celestia_Sovereign-Rollup
+# Setup Sovereign Rollup chain `NIBIRU` on top of Celestia BlockspaceRace DA network 
 
 ## A. Introduction
 - The part guides how to deploy an existing Cosmos-SDK appchain `Nibiru` as a rollup on top of Celestia Blockspacerace network.
