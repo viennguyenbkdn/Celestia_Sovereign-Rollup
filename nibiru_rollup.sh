@@ -189,7 +189,7 @@ fi
 
 # Query the DA Layer start height, in this case we are querying blockheight from RPC of a consensus fullnode on Celestia-Blockspacerace
 # You can check public of Celestia RPC at here: https://docs.celestia.org/nodes/blockspace-race/#rpc-endpoints
-DA_BLOCK_HEIGHT=$(expr $(curl https://rpc-blockspacerace.pops.one/block | jq -r '.result.block.header.height') + 1 )
+DA_BLOCK_HEIGHT=$(curl https://rpc-blockspacerace.pops.one/block | jq -r '.result.block.header.height')
 echo $DA_BLOCK_HEIGHT
 
 # start a sequencer of rollkit chain
@@ -261,7 +261,7 @@ nibid init $VALIDATOR_NAME --chain-id $CHAIN_ID --home \$NIBI_PATH
 SEQ_NODEID=$(`which nibid` status | jq .NodeInfo.id -r)
 
 # Get latest DA block height
-DA_BLOCK_HEIGHT=\$(expr \$(curl https://rpc-blockspacerace.pops.one/block | jq -r '.result.block.header.height') + 1 )
+DA_BLOCK_HEIGHT=\$(curl https://rpc-blockspacerace.pops.one/block | jq -r '.result.block.header.height')
 echo \$DA_BLOCK_HEIGHT
 
 
