@@ -32,7 +32,7 @@ go version
 
 ### 3. Download script
 ```
-https://raw.githubusercontent.com/viennguyenbkdn/Celestia_Sovereign-Rollup/main/nibiru_rollup.sh?token=GHSAT0AAAAAABTWIDDPIZHLEQIDDWZGZG7OZC26OIQ
+wget https://raw.githubusercontent.com/viennguyenbkdn/Celestia_Sovereign-Rollup/main/nibiru_rollup.sh
 ```
 
 ### 4. Setup `Nibiru` Rollup chain
