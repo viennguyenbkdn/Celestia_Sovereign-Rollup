@@ -10,7 +10,7 @@
   * Official guide from Celestia team 
   * My own script
 
-## B. Manual Installation of Rollup chain
+## B. Installation of Rollup chain
 ### 1. Install dependencies, if needed
 ```
 sudo apt update && sudo apt upgrade -y
@@ -28,5 +28,15 @@ rm "go$ver.linux-amd64.tar.gz"
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> ~/.bash_profile
 source ~/.bash_profile
 go version
+```
+
+### 3. Download script
+```
+https://raw.githubusercontent.com/viennguyenbkdn/Celestia_Sovereign-Rollup/main/nibiru_rollup.sh?token=GHSAT0AAAAAABTWIDDPIZHLEQIDDWZGZG7OZC26OIQ
+```
+
+### 4. Setup `Nibiru` Rollup chain
+```
+
 ```
 
