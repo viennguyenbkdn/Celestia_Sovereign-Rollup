@@ -12,7 +12,6 @@ if [ -f "$(which nibid)" ] ; then
 	rm -rf $HOME/.nibid
 fi
 
-
 # ======= Select Cosmos SDK rollkit version ======
 # Check Cosmos SDK verison using by chain
 CUR_SDK_VER=$(cat go.mod | grep "github.com/cosmos/cosmos-sdk " | awk '{print $2}')
@@ -81,11 +80,11 @@ fi
 
 # ===== Convert your Cosmos SDK L1 chain to be Cosmos SDK rollup =====
 echo -e "\n\033[0;32mStart to convert your chain to be Rollup...\033[0m\n"; sleep 1;
-echo -e "\nConvert Cosmos-SDK \033[0;31m$CUR_SDK_VER\033[0m to Rollkit Cosmos-SDK \033[0;31m$SEL_SDK_VER\033[0m"; sleep 2;
+# echo -e "\nConvert Cosmos-SDK \033[0;31m$CUR_SDK_VER\033[0m to Rollkit Cosmos-SDK \033[0;31m$SEL_SDK_VER\033[0m"; sleep 2;
 go mod edit -replace github.com/cosmos/cosmos-sdk=github.com/rollkit/cosmos-sdk@$SEL_SDK_VER
-echo -e "\nConvert Tendermint \033[0;31m$CUR_TEND_VER\033[0m to Rollkit Tendermint \033[0;31m$SEL_TEND_VER\033[0m"; sleep 2;
+# echo -e "\nConvert Tendermint \033[0;31m$CUR_TEND_VER\033[0m to Rollkit Tendermint \033[0;31m$SEL_TEND_VER\033[0m"; sleep 2;
 go mod edit -replace github.com/tendermint/tendermint=github.com/celestiaorg/tendermint@v0.34.22-0.20221202214355-3605c597500d
-#go mod edit -replace github.com/tendermint/tendermint=github.com/celestiaorg/tendermint@$SEL_TEND_VER;
+# go mod edit -replace github.com/tendermint/tendermint=github.com/celestiaorg/tendermint@$SEL_TEND_VER;
 go mod tidy
 go mod download
 make install;
@@ -96,21 +95,15 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-
 echo -e "\n\033[0;32mCompiling binary file is finished !! \033[0m\n"; sleep 1;
 
-
 # ===== Setting Rollup local devnet =====
-
 echo -e "\n\033[0;32mSetting up your Rollup devnet chain on Celestia Blockspacerace DA layer. Please wait.....  \033[0m\n"; sleep 1;
-
 # Setup some variables
 # cd $HOME
 echo -e "\n\033[0;32mSetup some variable\033[0m"; sleep 1;
 VALIDATOR_NAME=nibi-seq-1
 CHAIN_ID=nibi-rollup-local
-# KEY_NAME=nibi-key-1
-# KEY_2_NAME=nibi-key-2
 CHAINFLAG="--chain-id ${CHAIN_ID}"
 TOKEN_AMOUNT="10000000000000000000000000unibi"
 STAKING_AMOUNT="1000000000unibi"
@@ -121,8 +114,6 @@ echo -e "
 - Chain id : \033[0;31m${CHAIN_ID}\033[0m
 - Denom: \033[0;31m${DENOM}\033[0m
 "
-# - Account 1: \033[0;31m${KEY_NAME}\033[0m
-# - Account 2: \033[0;31m${KEY_2_NAME}\033[0m
 
 rm -rf $HOME/.nibid
 
@@ -159,7 +150,6 @@ nibid gentx $KEY_NAME $STAKING_AMOUNT --chain-id $CHAIN_ID --keyring-backend tes
 
 # collect genesis transactions
 nibid collect-gentxs
-
 
 # Fill in IP and port of DA node
 echo -e "\nPlease input url link of DA node (Ex: http://10.10.10.10:26659): " 
