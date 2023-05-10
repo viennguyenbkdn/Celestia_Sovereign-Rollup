@@ -7,8 +7,8 @@
   * a Rollup full node on server B
   * a Celestia DA Fullnode on server C
 - For installation guide of DA Full/Light node, kindly refer below link 
-  * [Official guide from Celestia team](https://docs.celestia.org/nodes/celestia-node/)
-  * My own script
+  * [Celestia's official guide](https://docs.celestia.org/nodes/celestia-node/)
+  * My owned script
 
 ## B. Installation of Rollup chain
 ### 1. Install dependencies, if needed
