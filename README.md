@@ -62,5 +62,5 @@ sudo journalctl -u nibiru-rollkit.service -f -o cat
 - If you intend to build a rollup fullnode on same rollup chain, kindly refer the guide to setup.
 ![image](https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/2dfdaea1-e35f-490f-8f9d-d4e72bca5b96)
 
-- Remind: Currently Rollkit Fullnode still have some bugs and can be stucked if Fullnode does not retrieve block data. So i will keep to update more after the issue is solved by Celestia team.
+- **REMIND**: _Currently Rollkit Fullnode still have some bugs and can be stucked if Fullnode does not retrieve block data. So i will keep to update more after the issue is solved by Celestia team._
 
