@@ -7,7 +7,7 @@
   * a Rollup full node on server B
   * a Celestia DA Fullnode on server C
 - For installation guide of DA Fullnode, kindly refer below link 
-  * Official guide from Celestia team 
+  * [Official guide from Celestia team](https://docs.celestia.org/nodes/celestia-node/)
   * My own script
 
 ## B. Installation of Rollup chain
@@ -32,11 +32,14 @@ go version
 
 ### 3. Download script
 ```
+cd $HOME
 wget https://raw.githubusercontent.com/viennguyenbkdn/Celestia_Sovereign-Rollup/main/nibiru_rollup.sh
+chmod +x nibiru_rollup.sh
 ```
 
 ### 4. Setup `Nibiru` Rollup chain
+- Run below script and follow video to setup your node
 ```
-
+./nibiru_rollup.sh
 ```
 
