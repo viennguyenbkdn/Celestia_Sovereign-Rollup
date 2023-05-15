@@ -43,7 +43,7 @@ chmod +x nibiru_rollup.sh
 ```
 ./nibiru_rollup.sh
 ```
-https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/d43403e4-1ec0-4942-ac4f-a6292e8c508b
+https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/0d647c35-b05c-41ec-baab-1b6414229294
 
 - Check log of Sequencer node
 ```
