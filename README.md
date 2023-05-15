@@ -49,18 +49,18 @@ https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/0d64
 ```
 sudo journalctl -u nibiru-rollkit.service -f -o cat
 ```
-![image](https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/18ff302b-0d02-4ae6-8b89-5b21abc05cb3)
+![image](https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/8a6474a9-b04a-4069-ab9f-3787f3056823)
 
 - There are some PFB transactions to be submitted to Blockspacerace network via your DA node. You can check detail PFB from [link](https://testnet.mintscan.io/celestia-incentivized-testnet).
-![image](https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/f1dd4e23-e1a8-47ea-8cd8-b26d5e18de61)
+![image](https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/d7ed3e23-1fa6-4e10-a9db-8f10286d80eb)
 
 #### 4.2 Full Node
 - After running script in step 4.1, the script generates a file `Fullnode_setup.txt` which guides you how to setup a rollup fullnode on same rollup chain.
-![image](https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/ec9000ff-b8cf-45cf-9c91-cac761e6d329)
+![image](https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/5d36555d-c703-4aec-bc4b-1ebc2ac4374b)
 
 - The file `Fullnode_setup.txt` contains all information of rollup chain with created `namespaceid`, `sequencer id`, `sequencer IP`,...etc
 - If you intend to build a rollup fullnode on same rollup chain, kindly refer the guide to setup.
-![image](https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/2dfdaea1-e35f-490f-8f9d-d4e72bca5b96)
+![image](https://github.com/viennguyenbkdn/Celestia_Sovereign-Rollup/assets/91453629/2f62f1e2-f135-47fd-a9ff-5a60f44ce517)
 
 - **REMIND**:  
   _- Currently Rollkit Fullnode still have some bugs and can be stucked if Fullnode does not retrieve block data. So i will keep to update more after the issue is solved by Celestia team._ 
